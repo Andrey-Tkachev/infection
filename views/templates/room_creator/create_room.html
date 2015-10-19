@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+   <link rel="stylesheet" type="text/css" href='{{ static_url("room_creator/room_creator_style.css") }}'/>
+   <link rel="stylesheet" type="text/css" href='{{ static_url("room/game_table_style.css")}}'/>
+  
+  <script type="text/javascript" src='{{ static_url("service_funcs.js")}}'></script>
+  <script type="text/javascript" src='{{ static_url("room_creator/room_creator.js")}}'></script>
+
+  
+</head>
+
+<body>
+	
+	<table id='options'>
+	<tr> 	
+		<td>
+			<div class="number" id='rows_num'>
+				<div class='option_text'>Количество строк</div>
+			    <span class="minus">-</span>
+			    <input type="text" value="1" size="5"/>
+			    <span class="plus">+</span>
+			</div>
+		</td>
+	
+		<td>	
+			<div class="number" id='columns_num'>
+				<div class='option_text'>Количество столбцов</div>
+			    <span class="minus">-</span>
+			    <input type="text" value="1" size="5"/>
+			    <span class="plus">+</span>
+			</div>
+		</td>
+		
+		<td>
+			<div>
+				<input type="submit" value="Удалить поле" class="button" id='delete_butt'>
+			</div>
+		</td>
+		<td>
+			
+		    <form method="POST" id="submit-form">
+            	<input type="submit" value="Отправить" class="button" id='submit_butt'>
+        	</form>
+		</td>
+	</tr>
+	</table>
+
+	<div id='table_container'>
+		<table id='game_table' height="100%">
+		</table>
+	</div>
+	
+</body>
+
+</html>

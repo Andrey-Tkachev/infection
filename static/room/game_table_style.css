@@ -1,0 +1,101 @@
+#main_screen{
+    min-padding-top: 7%;
+    padding-top: 7%;
+}
+
+#players_table{
+	display:inline-table;
+	width: 15%;
+
+}
+
+
+#game_table{
+    border-spacing: 10px;
+	margin:auto;
+}
+
+.player_name {
+
+	color:#383838;
+	letter-spacing:1pt;
+	word-spacing:1pt;
+	font-size:35px;
+	text-align:center;
+	font-family:Impact, fantasy;
+	line-height:1;
+
+}
+
+.player_icon {
+	height: 4rem;
+    width: 4rem;
+    border: 2px solid;
+    border-radius: 30px;
+}
+
+.cell_row {
+}
+
+.cell_column {
+}
+
+.cell {
+  	width: 10rem;
+    height: 10rem;
+
+    
+    border: 2px solid;
+	border-radius: 26%;
+ }
+
+.ghost{
+	opacity: 0.7;
+	border: 2px solid;
+	border-radius: 26%;
+}
+
+.cell.empty {
+	border: 2px dashed;
+	border-color:  #696969;
+  }
+
+.red {
+	background-color: #B22222;
+	border-color: #8B0000;
+}
+
+.blue{
+	background-color: #6495ED;
+	border-color: #4169E0;
+}
+
+.green{
+	background-color: #5F9EA0;
+	border-color: #008B8B;
+}
+
+.purple{
+	background-color: #9370DB;
+	border-color: #483D8B;
+}
+
+.entering{
+	box-shadow: 0px 2px 33px #1c1c1A;
+	transition: all 0.5s linear;
+}
+
+.exit{
+	box-shadow: 0px 2px 33px #FFFFFF;
+	transition: all 0.5s linear;
+}
+
+.in_focus{
+	background-color: #CCCCCC;
+	transition: all 0.5s linear;
+}
+
+.highlighting{
+	background-color: #66CC99;
+	opacity: 0.5;
+}

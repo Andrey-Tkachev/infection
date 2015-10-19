@@ -1,0 +1,87 @@
+span {cursor:pointer; }
+
+.number{
+	text-align: center;
+}
+
+.button {
+  font-weight: 700;
+  height: 100%;
+  color: white;
+  text-decoration: none;
+  padding: .8em 1em calc(.8em + 3px);
+  border-radius: 3px;
+  
+  transition: 0.2s;
+} 
+#submit_butt{
+	background: rgb(64,199,129);
+  	box-shadow: 0 -3px rgb(53,167,110) inset;
+}
+#submit_butt:hover { background: rgb(53, 167, 110); }
+#submit_butt:active {
+  background: rgb(33,147,90);
+  box-shadow: 0 3px rgb(33,147,90) inset;
+}
+
+#delete_butt{
+	font-weight: 700;
+  	height: 100%;
+  	color: white;
+  	text-decoration: none;
+  	padding: .8em 1em calc(.8em + 3px);
+  	border-radius: 3px;
+	background: rgb(199,64,129);
+  	box-shadow: 0 -3px rgb(167,53,110) inset;
+}
+
+#delete_butt:hover {
+	background: rgb(167, 53, 110);
+}
+
+#delete_butt:active {
+	background: rgb(147,33,90);
+  	box-shadow: 0 3px rgb(147,33,90) inset;
+}
+
+
+.minus, .plus{
+	width: 15px;
+	height:10px;
+	background:#f2f2f2;
+	border-radius:4px;
+	padding:1px 31px 4px 31px;
+	border:1px solid #ddd;
+}
+
+input{
+	height:24px;
+	border:1px solid #ddd;
+	border-radius:4px;
+	text-align: center;
+	padding:0 2px;
+}
+
+#table_container{
+	padding-top: 10px;
+    margin: 0 auto;
+}
+
+#options{
+	margin: 0 auto;
+	border-spacing: 10px;
+
+}
+
+
+.option_text{
+
+	color:#383838;
+	letter-spacing:1pt;
+	word-spacing:1pt;
+	font-size:20px;
+	text-align:center;
+	font-family:Impact, fantasy;
+	line-height:1;
+
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <!-- Тег meta для указания кодировки -->
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+   <link rel="stylesheet" type="text/css" href='{{ static_url("room/game_table_style.css")}}' />
+
+   <script type="text/javascript" src='{{ static_url("service_funcs.js")}}'></script>
+  
+  <script type="text/javascript" src='{{ static_url("room/game_controller.js")}}'></script>
+  <script type="text/javascript" src='{{ static_url("jquery.ui.touch-punch.min.js")}}'></script>
+  
+</head>
+
+<body>
+<p id='room_titile' class='player_name'> Комната: </p>
+<div id='main_screen'>       
+			<table id='players_table'>
+			</table>
+
+			<table id='game_table'>
+			</table>
+</div>
+</body>
+
+</html>

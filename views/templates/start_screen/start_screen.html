@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href='{{ static_url("start_screen/start_screen_style.css")}}'/>
+  <script type="text/javascript" src='{{ static_url("start_screen/start_screen.js")}}'></script>
+  
+</head>
+
+<body>
+	
+	<div id='start_container'>
+		<div class='infection-panel'>
+		 	<div class="form-title"><h2>Инфекция</h2></div>
+			<div class="form-title"><b>Имя</b></div>
+				<input class="form-field" type="text" id='nick'/ value="Ваше имя в игре" onblur="if(this.value==''){this.value='Ваше имя в игре';}"
+onfocus="if(this.value=='Ваше имя в игре'){this.value='';}"/>
+				<p>
+			<div class="form-title">ID комнаты</div>
+				<input class="form-field" type="text" id='room_id' value='Введите Id комнаты, к которой хотите присоединиться'onblur="if(this.value==''){this.value='Введите Id комнаты, к которой хотите присоединиться';}"
+onfocus="if(this.value=='Введите Id комнаты, к которой хотите присоединиться'){this.value='';}"/>
+			<p>
+			<input class="submit-button" type="submit" value="Найти игру" id='search_butt'/>
+			<input class="submit-button" type="BUTTON" value="Создать игру" id='create_butt'/>
+			<input class="submit-button" type="submit" value="Присоединиться" id='joi_butt'/>
+		</div>
+
+	</div>
+	
+</body>
+
+</html>
